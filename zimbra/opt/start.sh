@@ -13,14 +13,14 @@ echo "Configuring DNS Server"
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.old
 cat <<EOF >>/etc/dnsmasq.conf
 server=8.8.8.8
-listen-address=127.0.0.1
+listen-address=15.207.87.8
 domain=$DOMAIN
 mx-host=$DOMAIN,$HOSTNAME.$DOMAIN,0
 address=/$HOSTNAME.$DOMAIN/$CONTAINERIP
 user=root
 EOF
 sudo service dnsmasq restart
-
+ 
 ##Creating the Zimbra Collaboration Config File ##
 touch /opt/zimbra-install/installZimbraScript
 cat <<EOF >/opt/zimbra-install/installZimbraScript
