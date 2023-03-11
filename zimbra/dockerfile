@@ -1,7 +1,7 @@
 #################################################################
 # Dockerfile to build Zimbra Collaboration 8.8.7 container images
-# Based on Ubuntu 16.04
-# Created by Jorge de la Cruz
+# Based on Ubuntu Latest ver...
+# Created by Dishone
 #################################################################
 FROM ubuntu:latest
 
